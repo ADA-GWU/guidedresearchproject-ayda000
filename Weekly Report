@@ -1,1 +1,20 @@
 Weekly Report:
+
+My first step is downloading the data from https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm
+
+The sample of statements for this project is planned to cover all the available statements made by the FRB Chairs since 2000. Prior to 2000, Chairs did not issue a press statement. 
+Since there are 8 FOMC meetings in a year, this should give us roughly 180 texts of statements. 
+
+Additionally, I noticed that the speeches were separated by topic.
+These topics inlcude: Consumer Spending, Manufacturing, Real Estate and Construction, Agriculture and Natural Resources, Financial Services and Credit, Employment, Wages and Prices, The Effect of Y2K etc.
+
+These is useful in terms of pottentially splitting the sentiment analysis by topic.
+
+After my data collection, I will need to clean the data. Cleaning and preprocessing text data is an important step before performing sentiment analysis. 
+
+I will start by converting all the text to lowercase. This helps to avoid having multiple copies of the same words. I will remove all punctuation and stop words.
+
+I may potentially remove very frequent words that don't carry much information. I will also do stemming and lemmaization. These processes reduce words to their root form.
+This can help to reduce the complexity of the data and highlight common themes. Also I will potentially remove nuumbers.
+Then I will explore tokenization. This process breaks the text into individual words or tokens. In addition, I can create N-grams. N-grams are combinations of words that are used to capture context. 
+
