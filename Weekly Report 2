@@ -1,0 +1,13 @@
+The statements.xlsx includes my data collection. I am continuing to work on it. 
+Data Cleaning Steps:
+
+Noise Removal: Remove unnecessary and irrelevant items (noise) from the text. 
+
+Tokenization: Tokenization is the process of splitting text into individual words or tokens.
+
+Stop Word Removal: Remove stop words (eg.a and) to focus on the more meaningful words.
+
+Stemming and Lemmatization: This step involves reducing words to their root form. Stemming is a rudimentary rule-based process of stripping the suffixes.
+Lemmatization is an organized & step by step procedure of obtaining the root form of the word.
+
+Data Integration: Also I am keeping data in common format.
