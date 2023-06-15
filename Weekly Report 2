@@ -11,3 +11,27 @@ Stemming and Lemmatization: This step involves reducing words to their root form
 Lemmatization is an organized & step by step procedure of obtaining the root form of the word.
 
 Data Integration: Also I am keeping data in common format.
+
+Also below are my detailed steps...
+
+Before proceeding with the sentiment analysis using FinBERT, I will ensure my data is cleaned and properly structured. 
+
+Data Collection: I will start by downloading all the available statements from the FRB Chairs since 2000. I'll only need the Chair's statements post FOMC meetings.
+
+Data Extraction: I am doing this manually, you can the statements excel sheet,
+
+Text Cleaning: Includes many steps. Noise Removal -> Remove any sort of noise in the text using Python's regex (re) library to clean the text. 
+Case Normalization -> Convert all text to lower case. This is done to prevent duplication of words due to case difference. 
+Tokenization-> Breaking the text into individual sentences. Each sentence will be a separate document to be fed into FinBERT. 
+Python's NLTK library has a utility for sentence tokenization. Stop Word Removal -> For my case, FinBERT is already trained to handle stop words in financial text.
+
+Data Structuring: Once the text is clean, I will  structure it properly. 
+I will have a tabular data structure where each row represents a unique statement from the FRB Chair, with associated metadata like date, chair's name, and the cleaned text.
+After data cleaning is handled and the data is structured, I will make sure everything is saved in a csv file.
+
+Since new statements are released every year the data cleaning process will be done in a reproducible way.
+I will make sure to capture in detail the data cleaning process into a function or script to easily re-run it in the future as needed.
+
+Also I will keep a raw copy of the original data before starting the cleaning process.
+
+Overall, once my data is cleaned, I can then proceed with applying FinBERT for sentiment analysis for my planned approach.
