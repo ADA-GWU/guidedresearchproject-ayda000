@@ -1,1 +1,33 @@
 My data collection and processing is complete. 
+
+The data preprocessing and cleansing is a crucial step in any natural language processing task especially sentiment analysis. 
+This is the data preprocessing methods used:
+
+Text Cleaning: This includes many tasks steps like: 
+
+Lowercasing is when converting all text to lowercase can help ensure that themodel doesn't treat the same word with different cases as different words for instance "Federal" vs "federal"  
+
+Removing Punctuation can be important as it can confuse NLP models. The punctuation not specifically relevant to my analysis so I can remove it.
+I am considering replacing numbers, I'm not sure yet.
+
+Stopword Removal is important because they do not carry much meaning and add noise to my analysis. Many NLP libraries have predefined lists of stopwords that you can use to remove the stopwords from the dataset.
+
+Tokenization splits the text into individual words or tokens. This is necessary because NLP models don't process entire sentences or documents all at one time. 
+BERT models don't take raw text as input and they require tokenizing input text into tokens. The specific tokenization method depends on the model. BERT does use WordPiece tokenization. 
+Also BERT expects special tokens that show he beginning and separation/end of sentences. 
+
+Stemming and Lemmatization: reduce words to their root form. 
+
+I need to check for special characters. I need to decide how to handle special characters like dollar signs, percentage signs, ampersands, etc.
+
+I do not need to do any spell check.
+
+These all must be executed prior to feeding data into the FinBERT model.
+
+BERT-based models, including FinBERT require the preprocessing steps like  the ones explained above. 
+
+Also other steps to consider may include using an attention mask for a sequence of 1s and 0s indicating which tokens are padding and not. 
+Also all sentences fed into BERT must be of the same length. Padding is done to match the length of the sentences in a batch.
+
+I will have to depend on an NLP library to do these preprocessing steps before using FinBERT. 
+I found that for Python, a common choice is the Transformers library which includes built-in tokenizers for BERT and many other models.
