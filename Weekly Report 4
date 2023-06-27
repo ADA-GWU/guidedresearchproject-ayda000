@@ -1,1 +1,8 @@
+I am considering a Time Series Plot of Sentiment Index and Heatmap of Sentiment over Time for data visualization as described below.
+
+Time Series Plot of Sentiment Index: This can be used because I am creating a historical sentiment index. This can show how sentiment changes over time. 
+The x-axis can represent time (from 2000 to present), and the y-axis can represent the sentiment index. Each point on the graph represents the average sentiment value of each FOMC statement. 
+
+Heatmap of Sentiment over Time: A heatmap can help me  show the sentiment of each FOMC meeting over the course of a year. 
+The x-axis could represent months, the y-axis could represent years from 2000 to present. Finally, the color could represent sentiment with a gradient from negative to positive.
 
