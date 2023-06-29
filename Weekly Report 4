@@ -6,3 +6,14 @@ The x-axis can represent time (from 2000 to present), and the y-axis can represe
 Heatmap of Sentiment over Time: A heatmap can help me  show the sentiment of each FOMC meeting over the course of a year. 
 The x-axis could represent months, the y-axis could represent years from 2000 to present. Finally, the color could represent sentiment with a gradient from negative to positive.
 
+I am in the process of using FinBERT. FinBERT is a financial sentiment analysis model based on the BERT model developed by Google. 
+The purpose of FinBERT is to analyze financial text data and provide sentiment labels such as positive, negative, or neutral. Below iss the general process of how I will use FinBERT for sentiment analysis on my data. 
+
+I have the necessary packages installed such as PyTorch. 
+I will load the FinBERT model using the transformers library. You need the name of the model if it is a public model, or the path to the model if it is a local model.
+
+
+I will use sentiment analysis on the preprocessed data. I will feed the preprocessed data to the model and get the output. 
+The final output will be a sentiment label such as positive, negative, or neutral. This label represents the sentiment of the input text according to the model. 
+Also the sentiment is in the context of financial data, so a positive sentiment indicates positive financial implications. 
+
