@@ -28,3 +28,10 @@ Also attention masks are used to differentiate the actual tokens from the paddin
 
 In my project, I am preprocessing each sentence in each FOMC statement before using FinBERT to generate sentiment scores. 
 Once I have the scores, you can average them to create your sentiment index.
+
+Also once I have FinBERT to obtain sentiment scores from the policy statements I will use these scores to generate visualizations. 
+An interesting visualization can be to use an Time-Series plot. As each FOMC statement corresponds to a specific date, I can plot the sentiment scores over time.
+On the X-axis, I will have all the dates of the policy statements, and on the Y-axis, the sentiment scores.
+This visualization will give an understanding of how the changes through the years. 
+
+I will also start to work on my project report. 
