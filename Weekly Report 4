@@ -17,3 +17,14 @@ I will use sentiment analysis on the preprocessed data. I will feed the preproce
 The final output will be a sentiment label such as positive, negative, or neutral. This label represents the sentiment of the input text according to the model. 
 Also the sentiment is in the context of financial data, so a positive sentiment indicates positive financial implications. 
 
+FinBERT models have certain expectations about the format of the inputted data.  
+
+This includes sentence segmentation snd tokenization. Also BERT-based models have a specific way of tokenizing text data, splitting them up into word pieces. 
+I need use the provided BERT tokenizer, which will break up words into subwords, prepend at the beginning and end of each sentence.
+Also FinBERT models have a maximum token limit which is important to consider.  
+Also the tokenized words need to be mapped to their corresponding IDs in the FinBERT model vocabulary.
+
+Also attention masks are used to differentiate the actual tokens from the padding tokens if there are any.  
+
+In my project, I am preprocessing each sentence in each FOMC statement before using FinBERT to generate sentiment scores. 
+Once I have the scores, you can average them to create your sentiment index.
