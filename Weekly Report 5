@@ -1,0 +1,30 @@
+I am continuing toread a number of papers that explains and discusses BET and FinBERT including the paper by Araci (2019) which is the original paper that discusses FinBERT in detail.
+Below I provide an overview of FinBERT and BERT based on my understanding of the relevant papers. 
+
+FinBERT is designed to conduct sentiment analysis of Financial text based on pre-trained language models.
+FinBERT is based on BERT (Devlin et al., 2018).  BERT is a state-of-the-art pre-trained machine learning model capable of understanding sentences alongside the context in which they are being applied.
+BERT is pre-trained on the Toronto BookCorpus (containing 800M words) and Wikipedia articles (containing 2.5B words).
+BERT converts words into vectors, and reads the text bidirectionally to classify sentences given the context in which words are being used.
+This unique ability to understand contextual representation, and doing so in both directions of the text allows BERT to significantly outperform other machine-learning-based and dictionary based models 
+in tasks like text prediction and sentiment calculation. 
+Furthermore, it can be pre-trained further and then fine-tuned to better understand a desired context, like financial jargon.
+
+FinBERT uses attention masks to mask the padding tokens in sequences that are shorter than the maximum sequence length in the batch. 
+The mask is an array of 1s and 0s, with 1s for the actual tokens in the sequence and 0s for the padding tokens. 
+This is automatically handled by the BERT tokenizer which is part of preprocessing.
+
+Tokenization is a key step in this process. BERT uses a method known as WordPiece for tokenization. 
+WordPiece is a type of subword tokenization method that breaks down a word into subwords and characters. This is useful for languages that have compound words or when dealing with out-of-vocabulary (OOV) words. 
+
+BERT's WordPiece tokenization are:
+
+1) Pre-tokenization: In this first step, the input text is split into words based on whitespace and punctuation. Each word is then added to the list of tokens.
+
+2) Subword tokenization: After the initial tokenization, each word is tokenized again to handle unknown words. 
+This is done by iteratively breaking down a word into the largest possible subwords found in the WordPiece vocabulary. If a word does not exist in the vocabulary, it is broken down into smaller subwords. 
+
+3) Addition of special tokens: BERT expects specific tokens that indicate the start and end of sentences. Also optional tokens that separate sentences.
+
+4) Conversion to input ID: Each token in the list is replaced by its corresponding ID from the BERT vocabulary. These IDs will go in the model.
+
+BERT's WordPiece tokenization is that it allows the model to handle words not seen in its training data.
