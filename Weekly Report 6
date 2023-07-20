@@ -1,1 +1,37 @@
+I started to utilize FinBERT on your data. The purpose of FinBERT is to analyze financial text data and provide sentiment labels such as positive, negative, or neutral.
 
+First thing is to install necessary packages. I made sure you have the necessary packages installed. 
+This includes PyTorch, which is the deep learning library that FinBERT is built with, and transformers, which provides the BERT model.
+
+The next thing is to load the FinBERT model using the transformers library. 
+I need the name of the model if it is a public model, or the path to the model if it is a local model.
+
+Then using the  tokenizer to convert my text data into the format that the model expects.
+This involves tokenizing the text (splitting it into individual words/subwords), and converting these tokens into their corresponding numerical IDs. 
+The tokenizer also takes care of adding any necessary special tokens.
+
+Then perform sentiment analysis: Feed the preprocessed data to the model and get the output. The output is a logistic vector. 
+I can  convert it into probabilities using the softmax function, and then get the class with the maximum probability.
+
+Also the predicted_class variable will hold the ID of the predicted sentiment class. 
+The class names corresponding to these IDs can be found in the model’s id2 label attribute.
+
+The BERT model goes through 2 unsupervised learning steps. These are Mass Language Modelling (MLM) and Next Sentence Prediction (NSP). 
+In MLM the model is given a random sentence with a few words masked or replaced by a token. 
+BERT then tries to predict the embeddings for these words. In this way it learns the language and grammar. 
+In NSP step BERT is given 2 sentences, Sentence A and Sentence B and told to predict whether sentence A precedes sentence B in order. This way BERT learns the context of the language.
+
+BERT uses a method called WordPiece tokenization. This involves breaking words into smaller subwords. 
+This is especially useful for dealing with out-of-vocabulary words and enables the model to handle almost any word it encounters, even if it's not in the model's vocabulary. 
+I used the transformers library from Hugging Face to load the tokenizer that corresponds to the pre-trained model I am using.
+
+FinBERT, from Araci (2019), is a refined version of BERT that is designed to understand text in the context of Financial sentiment. 
+FinBERT is pre-trained using a large corpus of financial texts and fine-tuned with a dictionary of financial words and phrases from Malo et al. (2014).
+One feature of FinBERT is that it was pre-trained using longer texts, so it splits sentences individually and then calculates sentiment on each one of them. 
+This feature generally fits well with our data as our FOMC statements generally contain text for each statement date that has several sentences. 
+
+FinBERT produces five sentiment values. Three values represent the probabilities that the text is either positive, negative, or neutral. 
+FinBERT also calculates a compound score as the positive probability minus the negative probability. Lastly, FinBERT provides trinary sentiment prediction which is based on the highest of the three probabilities.
+
+FinBERT produces five sentiment values. Three values represent the probabilities that the text is either positive, negative, or neutral. 
+FinBERT also calculates a compound score as the positive probability minus the negative probability. Lastly, FinBERT provides trinary sentiment prediction which is based on the highest of the three probabilities.
