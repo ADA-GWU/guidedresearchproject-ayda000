@@ -2,3 +2,33 @@ So far added new code. Will add more updates here.
 I finalized and made any adjustments to my code as needed.
 I also finalized all the visulations I will use.
 I created a draft powerpoint for my presentaion.
+
+These statistics that I describe below provide an overview of the sentiment index, showing its central tendency, variability, and the range of sentiment values observed. 
+Below is a description and statistical summary of the FOMC Sentiment Index: 
+
+Count: This is the  number of data points in the FOMC Sentiment Index. In this case, there are 202 data points.
+
+Mean: This is the average sentiment score of the FOMC Sentiment Index.
+It indicates the overall sentiment tendency. In this case for my research, the mean sentiment score is approximately -0.002320.
+
+Std: This is the standard deviation of the sentiment scores. It measures the dispersion or spread of the sentiment data points around the mean. 
+In this case for my research, the standard deviation is approximately 0.195040.
+
+Min: This is the minimum sentiment score observed in the FOMC Sentiment Index. It represents the most negative sentiment value. 
+In this case for my research, the minimum sentiment score is approximately -0.521709.
+
+25% Quartile 1: This is the first quartile or 25th percentile of the sentiment scores. It represents the value below which 25% of the data points lie.
+In this case for my research, the first quartile is approximately -0.139679.
+
+50% Quartile 2: This is the second quartile/median of the sentiment scores. It represents the value below which 50% of the data points lie. 
+In this case for my research, the median sentiment score is approximately -0.020916.
+
+75% Quartile 2: This is the third quartile or 75th percentile of the sentiment scores. It represents the value below which 75% of the data points lie.
+In this case for my research, the third quartile is approximately 0.116388.
+
+Max: This is the maximum sentiment score observed in the FOMC Sentiment Index. It represents the most positive sentiment value.
+In this case for my research, the maximum sentiment score is approximately 0.456939.
+
+
+In additon, I analyzed the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (https://fred.stlouisfed.org/series/CPIAUCSL).
+This helped me further interpret and analze my results. Also helped me to examine correlations between the sentiment index and other financial market indicators.
