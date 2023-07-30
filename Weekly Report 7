@@ -29,6 +29,18 @@ In this case for my research, the third quartile is approximately 0.116388.
 Max: This is the maximum sentiment score observed in the FOMC Sentiment Index. It represents the most positive sentiment value.
 In this case for my research, the maximum sentiment score is approximately 0.456939.
 
+To link the FOMC Sentiment Index (FOMC-SI) to key economic variables such as GDP growth and stock market performance measures, I can use regression analysis. 
+Regression analysis allows for me to examine the relationship between the FOMC-SI (independent variable) and the economic variables (dependent variables) 
+to understand how changes in sentiment may impact economic indicators.
+
+
+Also i decided for futire work Iw ould like to create a sentiment analysis model trained on more relevant financial text.
+Training a domain-specific sentiment analysis model using financial data can potentially lead to more accurate and contextually relevant sentiment predictions
+for financial documents like FOMC speeches, economic reports, company earnings calls, news articles, and social media posts related to the financial market.
+
+This will allow for a more accurate and contextually meaningful sentiment analysis tool for financial applications.
+
+
 
 In additon, I analyzed the Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (https://fred.stlouisfed.org/series/CPIAUCSL).
 This helped me further interpret and analze my results. Also helped me to examine correlations between the sentiment index and other financial market indicators.
