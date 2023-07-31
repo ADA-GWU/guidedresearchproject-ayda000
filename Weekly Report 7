@@ -33,12 +33,22 @@ To link the FOMC Sentiment Index (FOMC-SI) to key economic variables such as GDP
 Regression analysis allows for me to examine the relationship between the FOMC-SI (independent variable) and the economic variables (dependent variables) 
 to understand how changes in sentiment may impact economic indicators.
 
+Research Innovation:
+Conducting sentiment analysis specifically on FOMC speeches as there is no existing research project in this domain.  
+Creating a historical index of FOMC sentiment based on aggregated sentiment scores
+The FOMC index can serve as a tool for assessing the overall sentiment of FOMC members and provide a comprehensive view of sentiment trends over time. 
+This can allow for potentially revealing patterns related to economic conditions and policy decisions.
+Investigating the relationship between the FOMC-SI and key economic variables, such as GDP growth and stock market performance, through regression analysis.
+Applying sentiment analysis to study the link between FOMC sentiment and financial market conditions. 
 
-Also i decided for futire work Iw ould like to create a sentiment analysis model trained on more relevant financial text.
+
+Also i decided for futire work I would like to create a sentiment analysis model trained on more relevant financial text.
 Training a domain-specific sentiment analysis model using financial data can potentially lead to more accurate and contextually relevant sentiment predictions
 for financial documents like FOMC speeches, economic reports, company earnings calls, news articles, and social media posts related to the financial market.
 
 This will allow for a more accurate and contextually meaningful sentiment analysis tool for financial applications.
+
+
 
 
 
