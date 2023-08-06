@@ -1,5 +1,81 @@
-Final code added.
-Further final documentations will be added here.
-will create a final report.
+Final code and data added.
 
-Finalized powerpoint for presentation. Please see Final Report Document for my final weekly report.
+Finalized powerpoint for presentation. 
+
+Finalized Application result (details below and in final weekly report).
+
+Important: Please see Final Weekly Report Document for my final weekly report and more details.
+
+This project is novel in a number of fronts:
+This is the first project that designs a sentiment index for one of the major policy statements in the US.
+It implements FinBERT that is based on BERT, a LLM on textual data that is very specific in nature and drafted to reflect policy decisions and associated analysis of economic and financial conditions with specific jargons and language.
+It is a precursor to potentially a much larger project as it can lead to the development of Federal Reserve Board’s and similar policy institutions development of their own LLMs. 
+Provides an index that can be used as a tool for assessing the overall sentiment of FOMC members and provides a comprehensive view of sentiment trends over time. 
+This can allow for potentially revealing patterns related to economic conditions and policy decisions.
+The Index can be used to build predictive models that can link it to economic and market conditions and variables. 
+
+FOMC-SI Summary Statistics: 
+By construction, the index is between [-1, 1]
+A sentiment index of -1 means an extremely positive sentiment.
+A sentiment index close to +1 means a very negative sentiment.
+A sentiment index close to 0 means a neutral sentiment.
+The index range is between -0.52 and +0.46.
+Average for the entire history of statements is -0.002 which is close the a “neutral” sentiment!
+
+
+Application: Can FOMC-SI Predict VIX?  
+This application explores if the FOMC-SI can be useful in predicting economic and financial conditions.
+To this end, the index is used to assess if it can predict future values of VIX.
+The VIX Index, often referred to as the "fear gauge," is a measure of expected price fluctuations in the S&P 500 Index options over the next 30 days. 
+The Chicago Board Options Exchange (CBOE) introduced the VIX Index in 1993, and it has since become one of the most recognized measures of market volatility.
+The VIX also reflects how much risk is accumulated in the markets and used often by market participants and economic policy makers to get a sense of overall market sentiment and risk.
+The VIX index generally increases during recessions and bad economic periods as can be seen in the figure. 
+
+
+Application Results: FOMC Sentiment Index - VIX-Fear Index
+
+Collected daily VIX index from Bloomberg and calculated average VIX in between the FOMC statement dates for this analysis.
+The figure displays FOMC-SI together with the average VIX for the FOMC statement periods.
+Inspection of the plots reveals: 
+FOMC-SI generally high (sentiment in FOMC statements are more negative) during periods when VIX is low.
+This seemingly counterintuitive observation in fact may not be that counterintuitive. 
+Because, during episodes of low VIX, the markets are calm and risks tend to accumulate gradually and hence, 
+FOMC member having considerable information about the markets and economic conditions are more cautious and possibly has more negative sentiments reflected in the statements. 
+
+Regression Analysis with FOMC-SI
+Run two regressions.
+(1) First model regresses VIX on statement date t on a constant and FOMC-SI on the previous statement date (i.e., at date t-1).
+Results are reported in the Table.
+This models indicates a statistically significant coefficient for FOMC-SI (-8.531) with a p-value of 0.021 less than 0.05.
+This shows that the FOMC-SI is statistically significant and negative and hence, statistically predicts the future average value of VIX! 
+As the displayed scatter plot with the fitted regression line show, higher average VIX tends to associate with lower FOMC-SI 
+(i.e., positive sentiment in the statements).
+
+Regression Analysis with FOMC-SI continued…
+(2) The second model augments the first regression by also including the lagged VIX to control for the inertia 
+high VIX periods usually followed by a period of high VIX or low VIX periods usually followed by a period of low VIX as can be observed from the figure on slide 11.
+Like the first model, this second model also indicates a statistically significant coefficient for FOMC-SI (-3.800) with a p-value of 0.002 and hence,
+the statistical significance of FOMC-SI in predicting the future average value of VIX!
+Results for this model suggest that even after controlling for the persistence in VIX, 
+FOMC-SI is statistically significantly negative and predicts next statement period’s average VIX.   
+Results from both models are promising and show that additional work with different economic and financial market variables such as unemployment rate, GDP growth, or inflation may be useful.
+
+
+Conclusion
+
+Developed a sentiment index to gauge the overall sentiment in one of the major policy statements in the US.
+Developed a jupyter notebook that can be used to implement FinBERT in a given text data and implemented it to calculate FOMC-SI for each FOMC meeting date.
+FOMC-SI is calculated with all the publicly available FOMC statements and hence, historical evolution of the sentiment can be analyzed.
+Applied FOMC-SI to an important market fear gauge, namely VIX and showed that the FOMC-SI can predict future value of VIX! 
+
+Future Work
+
+Create a sentiment analysis model trained on more relevant financial text.
+
+Training a domain-specific sentiment analysis model using financial data can potentially lead to more accurate and contextually relevant sentiment predictions 
+for financial documents like FOMC speeches, economic reports, company earnings calls, news articles, and social media posts related to the financial market.
+
+This will allow for a more accurate and contextually meaningful sentiment analysis tool for financial applications.
+
+Suggest a project that develops Federal Reserve’s own LLM training as the text data in policy institutions can be different from the text data BERT and FinBERT as well as other LLMs are trained on.
+
