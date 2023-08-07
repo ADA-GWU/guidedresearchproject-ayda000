@@ -21,6 +21,16 @@ A sentiment index close to +1 means a very negative sentiment.
 A sentiment index close to 0 means a neutral sentiment.
 The index range is between -0.52 and +0.46.
 Average for the entire history of statements is -0.002 which is close the a “neutral” sentiment!
+(from my graph)
+(1) Gray Area 1: April to November 2001 Recession… Pre-recession the sentiment is more positive. During the recession, there is almost neutral very small negative sentiment.
+After the 2002 crisis until 2007, there is swinging but tends to stay above zero, meaning the FOMC statements tend to be negative. Why? Potentially the risks are accumulating in good times. This is because people are taking more mortgages etc. So statements are more cautious.
+(2) Gray Area 2: Global Financial Crisis starts in 2007 and ends around 2009. The sentiment index increases as the recession unfolds and hence becomes more negative. 
+Tends to remain around zero after the GFC partly because the European Debt Crisis unfolds around 2010 and 2011.
+(3) European Debt Crisis: After the European debt crisis the sentiment stays above zero which is similar to pre 2007 so economists are cautious about the overall economy.
+(4) Covid (2020): Prior to covid there is improvement.
+(5) Post Covid Period: The sentiment turns negative because the policy makers possibly think that government spending has increased, and interest rates declined to zero, inflation became a problem as well. 
+Only recently did the index come down, potentially indicating that the policy makers are more optimistic about the soft landing.
+
 
 
 Application: Can FOMC-SI Predict VIX?  
