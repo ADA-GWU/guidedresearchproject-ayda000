@@ -51,6 +51,10 @@ FOMC-SI generally high (sentiment in FOMC statements are more negative) during p
 This seemingly counterintuitive observation in fact may not be that counterintuitive. 
 Because, during episodes of low VIX, the markets are calm and risks tend to accumulate gradually and hence, 
 FOMC member having considerable information about the markets and economic conditions are more cautious and possibly has more negative sentiments reflected in the statements. 
+Eg. During Covid, there is a spike in VIX. However, the index is low (positive sentiment). This is normal because policy makers know what to do in the sense that they will lower interest and increase the money supply to 
+finance the government spending to combat with Covid. However, for post covid, the sentiment index starts to increase which reflects the potential FOMC members concern about the impact of 
+policies made during the covid era and the inflation is becoming a resilient problem. 
+There are many discussions about how much to increase the interest rates. Also VIX is low post Covid because the Covid induced economic crisis was around two months.
 
 Regression Analysis with FOMC-SI
 Run two regressions.
