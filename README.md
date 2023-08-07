@@ -11,10 +11,8 @@ Outline of Folders
 
 reports/ - all reports are stored here
 
-reviews/ - all reviews are stored here in respective folders, named as Review_Date_SubmitterName.pdf
-
 presentationFinal/ - presentations are stored here
 
 code and data/ - code any data used for the experiments and analysis is stored here
 
-slides/ - all drafts of the presentation slides are stored here
+
