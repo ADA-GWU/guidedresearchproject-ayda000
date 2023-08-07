@@ -15,6 +15,6 @@ reviews/ - all reviews are stored here in respective folders, named as Review_Da
 
 presentationFinal/ - presentations are stored here
 
-data/ - any data used for the experiments and analysis is stored here
+code and data/ - code any data used for the experiments and analysis is stored here
 
 slides/ - all drafts of the presentation slides are stored here
